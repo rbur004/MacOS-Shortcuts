@@ -1,0 +1,3 @@
+# Set Automator to 'R Shell Script' and 'Shell' to '/bin/bash'.
+# In Atom, under Atom menu, 'Install Shell Commands'
+/usr/local/bin/atom $(/usr/bin/dirname $1)
