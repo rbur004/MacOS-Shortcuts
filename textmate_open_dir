@@ -1,0 +1,4 @@
+# Set Automater to 'Run Shell Script'
+# Shell '/bin/bash'
+# In Textmate Preferences, install Shell commands
+/usr/local/bin/mate $(/usr/bin/dirname $1)
