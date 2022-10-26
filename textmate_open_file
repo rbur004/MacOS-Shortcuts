@@ -1,0 +1,4 @@
+# Automator set to "Run Shell Script"
+# Shell set to '/bin/bash'
+# Textmate preferences: Install shell commands
+/usr/local/bin/mate $@
