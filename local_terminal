@@ -1,4 +1,6 @@
 on run {input, parameters}
-	tell application "Terminal" to do script "" activate
-	tell application "Terminal" to set current settings of front window to (first settings set whose name is "Man Page")
+	tell application "Terminal"
+		(do script "") activate
+		set current settings of front window to (first settings set whose name is "Man Page")
+	end tell
 end run
