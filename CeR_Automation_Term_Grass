@@ -1,4 +1,7 @@
 on run {input, parameters}
-	tell application "Terminal" to do script "ssh cerautomation.its.auckland.ac.nz"
-	tell application "Terminal" to set current settings of front window to (first settings set whose name is "Grass")
+	tell application "Terminal"
+		activate
+		set w to do script "ssh cerautomation.its.auckland.ac.nz"
+		set current settings of w to settings set "Grass"
+	end tell
 end run
