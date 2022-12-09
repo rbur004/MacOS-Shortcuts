@@ -1,4 +1,6 @@
 on run {input, parameters}
-	tell application "Terminal" to do script "ssh db"
-	tell application "Terminal" to set current settings of front window to (first settings set whose name is "Ocean")
+	tell application "Terminal"
+		(do script "ssh db") activate
+		set current settings of front window to (first settings set whose name is "Ocean")
+	end tell
 end run
